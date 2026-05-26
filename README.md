@@ -1,4 +1,4 @@
-# XYZ Bank Automation Testing Project
+# XYZ Bank Automation Testing Framework
 
 This project is an automation testing framework built using Playwright with TypeScript for the XYZ Bank demo banking application.
 
@@ -7,12 +7,14 @@ This project is an automation testing framework built using Playwright with Type
 # 📁 Project Structure
 
 ```bash
-TASK-FADILAH/
+fadilah-iv-assessment/
 │
 ├── page-objects/           # Page Object classes
+│   ├── customer-page.ts
+│   └── manager-page.ts
 │
 ├── tests/                  # Test scripts
-│   ├── admin.spec.ts
+│   ├── manager.spec.ts
 │   └── customer.spec.ts
 │
 ├── test-data/              # Test data files
@@ -67,7 +69,7 @@ git clone https://github.com/fadilahali90/fadilah-iv-assessment.git
 ## Enter Project Folder
 
 ```bash
-cd fadilah-iv-assessment/
+cd fadilah-iv-assessment
 ```
 
 ---
@@ -102,10 +104,10 @@ npx playwright test
 
 ## Run Specific Test File
 
-### Run Admin Test
+### Run Manager Test
 
 ```bash
-npx playwright test tests/admin.spec.ts
+npx playwright test tests/manager.spec.ts
 ```
 
 ### Run Customer Test
